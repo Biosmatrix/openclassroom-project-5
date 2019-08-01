@@ -22,14 +22,36 @@
   <body>
     <div class="container">
       <div id="content">
-        <blockquote>
-          <h5 id="quote"></h5>
-          <p id="author"></p>
-        </blockquote>
+        <blockquote id="quotes-container"></blockquote>
       </div>
-      <div class="quotebutton">
-        <button type="button" class="btn btn-outline-primary" id="genNewQuote">
-          Generate Quote
+      <div class="text-center"></div>
+      <div class="quotebutton" style="display: inline-block">
+        <select
+          class="form-control"
+          id="quoteNumber"
+          style="margin-bottom: 10px"
+        >
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button
+          type="button"
+          class="btn btn-outline-primary quote-btn"
+          data-value="General"
+          id="generalQuote"
+        >
+          General Quote
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary quote-btn"
+          data-value="Business"
+          id="businessQuote"
+        >
+          Business Quote
         </button>
       </div>
     </div>
@@ -51,5 +73,6 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
